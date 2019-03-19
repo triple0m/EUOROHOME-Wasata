@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  text-align: -webkit-right;
+  text-align: -webkit-center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -8,7 +8,9 @@
     margin: 0;
     padding-top: 80px;
     width: fit-content;
-    background-color: #77889926;
+
+    /* background-color: #77889926; */
+    background-color: snow;
   }
 }
 
@@ -34,17 +36,21 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+h3 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
 
 .landing-page {
   background-attachment: scroll;
   background-image: url(https://github.com/triple0m/eurohome.sa/blob/master/EurohomeLogo.jpg?raw=true);
   background-size: cover;
   background-position: center;
-  height: 37vh;
+  height: 53vh;
   display: flex;
+  align-items: flex-end;
+  text-align: -webkit-center;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 nav a {
   color: #f8f8ff;
@@ -67,14 +73,13 @@ section:nth-of-type(odd) {
   background: #f5f5f5;
 }
 
-h3 {
-  text-decoration: underline;
-  text-decoration-color: dodgerblue;
-}
-
 .container {
-  display: flex;
   flex-wrap: wrap;
+
+  display: flow-root;
+  border: groove;
+
+  background-color: lavender;
 }
 
 .col-4 {
@@ -99,18 +104,21 @@ html {
   padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .sm-col-12 {
     width: 100%;
   }
   footer {
     width: 100%;
     padding: 50px 10px;
-    background: #16161d;
-    color: #f8f8f8;
+    background: #7d7d96;
+    color: #7d7d96;
   }
 
   img {
     border-radius: 0;
+  }
+  img.app {
+    cursor: wait;
   }
 }
